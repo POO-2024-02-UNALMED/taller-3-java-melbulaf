@@ -46,4 +46,10 @@ public class Control {
 			}
 		}
 	}
+	public void setCanal(int cl){
+		tv.canal = cl;
+	}
+	public void setVolumen(int vol){
+		tv.volumen = vol;
+	}
 }
