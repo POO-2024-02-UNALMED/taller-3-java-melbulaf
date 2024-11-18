@@ -12,4 +12,38 @@ public class Control {
 	public TV getTv() {
 		return tv;
 	}
+	public void turnOn() {
+		tv.estado = true;
+	}
+	public void turnOff() {
+		tv.estado = false;
+	}
+	public void canalUp() {
+		if (tv.estado == true) {
+			if (tv.canal >= 1 && tv.canal <= 120){
+				tv.canal++;
+			}
+		}
+	}
+	public void canalDown() {
+		if (tv.estado == true) {
+			if (tv.canal >= 1 && tv.canal <= 120){
+				tv.canal--;
+			}
+		}
+	}
+	public void volumenUp() {
+		if (tv.estado == true) {
+			if (tv.volumen >= 0 && tv.volumen <= 7){
+				tv.volumen++;
+			}
+		}
+	}
+	public void volumenDown() {
+		if (tv.estado == true) {
+			if (tv.volumen >= 0 && tv.volumen <= 7){
+				tv.volumen--;
+			}
+		}
+	}
 }
