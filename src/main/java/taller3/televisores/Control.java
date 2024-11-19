@@ -20,28 +20,28 @@ public class Control {
 	}
 	public void canalUp() {
 		if (tv.estado == true) {
-			if (tv.canal >= 1 && tv.canal <= 120){
+			if (tv.canal > 1 && tv.canal < 120){
 				tv.canal++;
 			}
 		}
 	}
 	public void canalDown() {
 		if (tv.estado == true) {
-			if (tv.canal >= 1 && tv.canal <= 120){
+			if (tv.canal > 1 && tv.canal < 120){
 				tv.canal--;
 			}
 		}
 	}
 	public void volumenUp() {
 		if (tv.estado == true) {
-			if (tv.volumen >= 0 && tv.volumen <= 7){
+			if (tv.volumen > 0 && tv.volumen < 7){
 				tv.volumen++;
 			}
 		}
 	}
 	public void volumenDown() {
 		if (tv.estado == true) {
-			if (tv.volumen >= 0 && tv.volumen <= 7){
+			if (tv.volumen > 0 && tv.volumen < 7){
 				tv.volumen--;
 			}
 		}
