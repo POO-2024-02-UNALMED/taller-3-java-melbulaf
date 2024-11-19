@@ -20,10 +20,10 @@ public class TV {
 	public Marca getMarca() {
 		return marca;
 	}
-	public void setCanal(int canal){
+	public void setCanal(int cl){
 		if(estado == true) {
 			if(canal >= 1 && canal <= 120) {
-				this.canal = canal;
+				canal = cl;
 			}
 		}
 	}
@@ -36,10 +36,10 @@ public class TV {
 	public int getPrecio() {
 		return precio;
 	}
-	public void setVolumen(int volumen){
+	public void setVolumen(int vol){
 		if(estado == true) {
 			if(volumen >= 0 && volumen <= 7) {
-				this.volumen = volumen;
+				volumen = vol;
 			}
 		}
 	}
